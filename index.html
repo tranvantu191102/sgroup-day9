@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 1200px;
+        margin: auto;
+      }
+      section {
+        margin: 20px 0;
+      }
+
+      .btn {
+        background-color: blue;
+        border: none;
+        padding: 10px 22px;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 700;
+      }
+
+      .title {
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>Hello, <span class="hello"></span></div>
+      <section>
+        <div class="title">Bài 1. Arrow function và anonymous function</div>
+        <p>
+          Arrow function được ra mắt ở ES6 giúp viết function được ngắn gọn hơn.
+          <br />
+          Ví dụ: const myFunction = (a,b) => a*b;
+          <br />
+          Anonymous function là một function không có tên, thường được dùng
+          trong các function khác, hay một hàm được return về thì cũng được gọi
+          là anonymous function
+          <br />
+          Ví dụ: const myFunction = () => {return function(a,b) => a*b}
+        </p>
+      </section>
+      <section>
+        <div class="title">
+          Bài 2. Viết hảm Javascript trả về chuỗi thông tin ngày giờ hiện tại
+        </div>
+        <button class="show__day btn">Kết quả</button>
+        <p>Ngày hôm nay là ngày: <span class="now-day"></span></p>
+      </section>
+      <section>
+        <div class="title">
+          Bài 3. Viết hàm để in ra ngày tháng năm với các định dạng mm-dd-yyyy,
+          mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy
+        </div>
+        <div class="form-input">
+          <label>Nhập ngày:</label>
+          <input type="text" class="input-day-3" />
+        </div>
+        <div class="form-input">
+          <label>Nhập tháng:</label>
+          <input type="text" class="input-month-3" />
+        </div>
+        <div class="form-input">
+          <label>Nhập năm:</label>
+          <input type="text" class="input-year-3" />
+        </div>
+        <button class="btn show-result-3">Kết quả</button>
+        <div class="result-3"></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 4. Viết hàm JavaScript để kiểm tra xem một số nguyên (1 < n <
+          10^1000) đã cho có chuỗi chữ số tăng hay không. Chuỗi chữ số tăng là
+          chuỗi chữ số có độ dài bé nhất là 3, chữ số đứng ở sau lớn hơn chữ số
+          đứng trước (ví dụ: 123, 456, 123456, 6789)
+        </div>
+        <div class="form-input">
+          <label>Nhập số:</label>
+          <input type="text" class="input-form-4" />
+        </div>
+        <button class="btn btn-result-4">Kết quả</button>
+        <div>Kết quả: <span class="result-4"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 5.Viết một hàm JavaScript trả về một chuỗi đã được thay thế mỗi ký
+          tự với ký tự cách nó n ký tự trong bảng chữ cái. (mã hóa caesar)
+        </div>
+        <div class="form-input">
+          <label>Nhập: </label>
+          <input type="text" class="form-input-5" />
+        </div>
+        <button class="btn btn-result-5">Kết quả</button>
+        <div>Kết quả: <span class="result-5"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 6.Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong
+          mảng
+        </div>
+        <p>Ví dụ: [1,2,3,5,6,7,4,7,3,2,1,6,7,8,7,7,1,7,3,7,9999,7,123,7]</p>
+        <button class="btn btn-result-6">Kết quả</button>
+        <div>Kết quả: <span class="result-6"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 7.Viết chương trình để kiểm tra xem chuỗi (không phân biệt hoa
+          thường) chứa 'javascript' hay không
+        </div>
+        <div class="form-input">
+          <label>Nhập: </label>
+          <input type="text" class="form-input-7" />
+        </div>
+        <button class="btn btn-result-7">Kết quả</button>
+        <div>Kết quả: <span class="result-7"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 8.Viết hàm trả về tên tiếng Anh của tháng từ một số cụ thể: ví dụ
+          1 → January
+        </div>
+        <div class="form-input">
+          <label>Nhập tháng: </label>
+          <input type="text" class="form-input-8" />
+        </div>
+        <button class="btn btn-result-8">Kết quả</button>
+        <div>Kết quả: <span class="result-8"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 9.Viết một hàm JavaScript tìm từ dài nhất trong chuỗi
+        </div>
+        <div class="form-input">
+          <label>Nhập chuỗi: </label>
+          <input type="text" class="form-input-9" />
+        </div>
+        <button class="btn btn-result-9">Kết quả</button>
+        <div>Kết quả: <span class="result-9"></span></div>
+      </section>
+      <section>
+        <div class="title">
+          Bài 10. Viết hàm tính tổng các chữ số khác 5 của một số nguyên (lớn)
+          sử dụng hàm reduce và filter
+        </div>
+        <div class="form-input">
+          <label>Nhập số: </label>
+          <input type="text" class="form-input-10" />
+        </div>
+        <button class="btn btn-result-10">Kết quả</button>
+        <div>Kết quả: <span class="result-10"></span></div>
+      </section>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
